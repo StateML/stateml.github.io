@@ -1,10 +1,9 @@
 <script setup>
 import Date from './Date.vue';
 import { computed } from 'vue';
-import { useData, useRoute } from 'vitepress';
+import { useRoute } from 'vitepress';
 import posts from '../metadata.json';
 
-const { frontmatter: data } = useData();
 const route = useRoute();
 function findCurrentIndex() {
   return posts.findIndex((p) => p.href === route.path);
@@ -17,9 +16,24 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1]);
 
 <template>
   <article class="prose">
-    <header>
-      <h1>{{ data.title }}</h1>
+    <header class="mb-8">
       <Date :date="date" />
+      <h1>{{ $frontmatter.title }}</h1>
+      <dl class="flex gap-2 text-sm font-medium leading-5 whitespace-nowrap">
+        <dt class="sr-only">Name</dt>
+        <dd class="text-gray-900">{{ $frontmatter.author }}</dd>
+        |
+        <dt v-if="$frontmatter.twitter" class="sr-only">Twitter</dt>
+        <dd v-if="$frontmatter.twitter">
+          <a
+            :href="'https://twitter.com/' + $frontmatter.twitter"
+            target="_blank"
+            rel="noopnener noreferrer"
+            class="link"
+            >{{ $frontmatter.twitter }}</a
+          >
+        </dd>
+      </dl>
     </header>
 
     <Content />

@@ -2,9 +2,9 @@
 title: A language for authoring state machines.
 ---
 
-<section class="flex flex-col justify-center items-center" style="margin: min(25%, 10rem) 0;">
+<section class="flex flex-col justify-center items-center" style="margin: min(20%, 10rem) 0;">
 
-<h1 class="!my-0">
+<h1 class="!mt-0">
   <svg
     viewBox="0 0 304 100"
     xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ languages, and interpreters.
 
 <section>
 
-### Roadmap
+## Roadmap
 
 <img
   src="/stateml-roadmap.png"

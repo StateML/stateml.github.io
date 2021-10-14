@@ -31,7 +31,7 @@ body {
 }
 
 a {
-  @apply underline p-2 transform hover:-translate-y-1 transition-transform;
+  @apply underline transform hover:-translate-y-1 transition-transform;
 }
 
 a:visited {

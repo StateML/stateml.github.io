@@ -22,6 +22,7 @@ function getPost(file, postDir, asFeed = false) {
     title: data.title,
     href: `/blog/${file.replace(/\.md$/, '.html')}`,
     date: formatDate(data.date),
+    tags: data.tags,
     excerpt,
   };
   if (asFeed) {
