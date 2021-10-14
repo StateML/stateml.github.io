@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code'), url('/fira-code-variable.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --background-color: #ffffff;
+  --foreground-color: #010101;
+  --active-color: #000000;
+}
+
+/* TODO: wait for tailwind typography to support dark theme: https://github.com/tailwindlabs/tailwindcss-typography/pull/122#issuecomment-937641445 */
+/* @media screen and (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #010101;
+    --foreground-color: #d7d7d7;
+  }
+} */
+
+body {
+  @apply antialiased;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  font-family: 'Fira Code', monospace;
+  margin: 2rem;
+}
+
+a {
+  @apply underline p-2 transform hover:-translate-y-1 transition-transform;
+}
+
+a:visited {
+  @apply opacity-90;
+}
+
+a:active {
+  color: var(--active-color);
+}
+
+a[href='#'] {
+  @apply pointer-events-none cursor-not-allowed opacity-40;
+}
+
+/* Remove the anchor link that Vitepress adds */
+.hide-header-anchor a {
+  display: none;
+  visibility: hidden;
+}

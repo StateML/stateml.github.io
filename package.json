@@ -1,0 +1,24 @@
+{
+  "name": "stateml.github.io",
+  "version": "1.0.0",
+  "description": "Landing page and blog for StateML",
+  "main": "index.js",
+  "repository": "https://github.com/StateML/stateml.github.io.git",
+  "author": "“chrisshank” <chris.shank.23@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.7",
+    "cheap-watch": "^1.0.4",
+    "gray-matter": "^4.0.3",
+    "markdown-it-attrs": "^4.1.0",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.17",
+    "vitepress": "^0.20.0"
+  }
+}
