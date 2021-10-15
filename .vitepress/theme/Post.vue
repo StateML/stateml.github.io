@@ -35,16 +35,19 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1]);
       </dl>
     </header>
 
-    <Content />
+    <Content class="mb-10" />
 
     <footer>
-      <div v-if="nextPost">
-        <h2>Next Article</h2>
-        <a :href="nextPost.href" class="p-2">{{ nextPost.title }}</a>
-      </div>
-      <div v-if="prevPost">
-        <h2 class="text-xs tracking-wide uppercase text-gray-500">Previous Article</h2>
-        <a :href="prevPost.href" class="p-2">{{ prevPost.title }}</a>
+      <div class="flex mb-8">
+        <div v-if="prevPost" class="flex-1 max-w-xs">
+          <h2 class="text-gray-500 !text-sm">Previous Article</h2>
+          <a :href="prevPost.href">{{ prevPost.title }}</a>
+        </div>
+        <div v-if="nextPost && prevPost" class="mx-4 border border-gray-200"></div>
+        <div v-if="nextPost" :class="prevPost ? 'text-right' : ''" class="flex-1 max-w-xs">
+          <h2 class="text-gray-500 !text-sm">Next Article</h2>
+          <a :href="nextPost.href">{{ nextPost.title }}</a>
+        </div>
       </div>
       <a class="p-2" href="/blog">← Back to the blog</a>
     </footer>

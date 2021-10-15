@@ -3,8 +3,6 @@ title: 'The symbolic boundary of statecharts; hidden between the visual formalis
 date: '2021-10-21'
 author: 'Chris Shank'
 twitter: '@chrisshank23'
-tags:
-  - 'WIP'
 ---
 
 > Design is about deciding on the boundaries. – [Grady Booch](https://twitter.com/Grady_Booch/status/1444754474426191873)
