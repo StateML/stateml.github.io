@@ -3,6 +3,8 @@ title: 'JSON is not the best format for authoring statecharts'
 date: '2021-10-18'
 author: 'Chris Shank'
 twitter: '@chrisshank23'
+tags:
+  - 'WIP'
 ---
 
 > Is JSON really the best we can do as a DSL for building statecharts? [source](https://twitter.com/mpocock1/status/1439853560150298624)
