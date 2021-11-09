@@ -34,7 +34,17 @@ function getDateTime(time) {
 </script>
 
 <template>
-  <dl class="flex gap-3 text-sm leading-6 font-medium text-gray-500">
+  <dl
+    class="
+      flex flex-wrap
+      column-gap-3
+      text-sm
+      leading-6
+      font-medium
+      text-gray-500
+      whitespace-nowrap
+    "
+  >
     <div class="flex">
       <dt class="sr-only">Created</dt>
       <dd>

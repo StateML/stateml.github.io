@@ -21,7 +21,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1]);
       <h1 class="!m-0">{{ $frontmatter.title }}</h1>
       <dl class="flex text-sm font-medium leading-5 whitespace-nowrap">
         <dt class="sr-only">Name</dt>
-        <dd class="text-gray-900">{{ $frontmatter.author }}</dd>
+        <dd class="text-gray-900 whitespace-nowrap">{{ $frontmatter.author }}</dd>
         <dt v-if="$frontmatter.twitter" class="sr-only">Twitter</dt>
         <dd v-if="$frontmatter.twitter">
           <span class="px-2">|</span>
