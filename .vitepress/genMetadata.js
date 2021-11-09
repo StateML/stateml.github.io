@@ -20,7 +20,7 @@ function getPost(file, postDir, asFeed = false) {
   const { data, excerpt } = matter(src, { excerpt: true });
   const post = {
     title: data.title,
-    href: `/blog/${file.replace(/\.md$/, '.html')}`,
+    href: `/garden/${file.replace(/\.md$/, '.html')}`,
     date: formatDate(data.date),
     tags: data.tags,
     excerpt,
@@ -39,7 +39,7 @@ function getPost(file, postDir, asFeed = false) {
 }
 
 function getPosts(asFeed = false) {
-  const postDir = path.resolve(__dirname, '../blog');
+  const postDir = path.resolve(__dirname, '../garden');
   return fs
     .readdirSync(postDir)
     .map((file) => getPost(file, postDir, asFeed))
@@ -78,7 +78,7 @@ async function watchPosts() {
   const CheapWatch = require('cheap-watch');
   // @ts-ignore
   const watcher = new CheapWatch({
-    dir: path.resolve(__dirname, '../blog'),
+    dir: path.resolve(__dirname, '../garden'),
     filter: ({ path }) => path.endsWith('.md'),
     debounce: 50,
   });
