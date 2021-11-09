@@ -55,7 +55,7 @@ function formatDate(date) {
     time: +date,
     string: date.toLocaleDateString('en-US', {
       year: 'numeric',
-      month: 'long',
+      month: 'short',
       day: 'numeric',
     }),
   };

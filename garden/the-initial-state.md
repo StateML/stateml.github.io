@@ -1,6 +1,6 @@
 ---
 title: 'The Initial State: Planting the seeds'
-date: '2021-11-3'
+date: '2021-11-8'
 author: 'Chris Shank'
 twitter: '@chrisshank23'
 ---
