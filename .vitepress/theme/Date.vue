@@ -2,8 +2,8 @@
 import { computed } from 'vue';
 
 const props = defineProps({
-  createdDate: Object,
-  updatedDate: Number,
+  createdDate: { type: Object, required: true },
+  updatedDate: { type: Number, required: false, default: undefined },
 });
 
 function sameDay(d1, d2) {
@@ -15,7 +15,9 @@ function sameDay(d1, d2) {
 }
 
 const isUpdated = computed(
-  () => !sameDay(new Date(props.createdDate.time), new Date(props.updatedDate))
+  () =>
+    props.updatedDate != undefined &&
+    !sameDay(new Date(props.createdDate.time), new Date(props.updatedDate))
 );
 
 function formatUpdatedDate() {
@@ -36,14 +38,14 @@ function getDateTime(time) {
     <div class="flex">
       <dt class="sr-only">Created</dt>
       <dd>
-        <time :datetime="getDateTime(props.createdDate.time)">{{ createdDate.string }}</time>
+        <time :datetime="getDateTime(props.createdDate.time)">{{ props.createdDate.string }}</time>
       </dd>
     </div>
     <div v-if="isUpdated" class="flex">
       (
       <dt>updated&nbsp;</dt>
       <dd>
-        <time :datetime="getDateTime(updatedDate)">{{ formatUpdatedDate() }}</time>
+        <time :datetime="getDateTime(props.updatedDate)">{{ formatUpdatedDate() }}</time>
       </dd>
       )
     </div>

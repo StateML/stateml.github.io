@@ -26,7 +26,7 @@ import posts from '../metadata.json';
     <ul class="divide-y divide-gray-200">
       <li class="py-12" v-for="{ title, href, date, tags, excerpt } of posts">
         <article class="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-          <Date :date="date" />
+          <Date :created-date="date" />
           <div class="space-y-3 xl:col-span-3">
             <h2 class="text-xl leading-8 font-semibold tracking-tight">
               <a class="text-gray-900 no-underline" :href="href">{{ title }}</a>
