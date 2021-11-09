@@ -17,8 +17,8 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1]);
 <template>
   <article class="prose">
     <header class="mb-8">
-      <Date :date="date" />
-      <h1>{{ $frontmatter.title }}</h1>
+      <Date :created-date="date" :updated-date="route.data.lastUpdated" />
+      <h1 class="!m-0">{{ $frontmatter.title }}</h1>
       <dl class="flex text-sm font-medium leading-5 whitespace-nowrap">
         <dt class="sr-only">Name</dt>
         <dd class="text-gray-900">{{ $frontmatter.author }}</dd>
