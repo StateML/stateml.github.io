@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Fira Code';
-  src: local('Fira Code'), url('/fira-code-variable.ttf') format('truetype');
+  font-family: "Fira Code";
+  src: local("Fira Code"), url("/fira-code-variable.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -14,19 +14,19 @@
   --active-color: #000000;
 }
 
-/* TODO: wait for tailwind typography to support dark theme: https://github.com/tailwindlabs/tailwindcss-typography/pull/122#issuecomment-937641445 */
-/* @media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   :root {
-    --background-color: #010101;
-    --foreground-color: #d7d7d7;
+    --background-color: #13161f;
+    --foreground-color: #dadada;
+    --active-color: #ffffff;
   }
-} */
+}
 
 body {
   @apply antialiased;
   background-color: var(--background-color);
   color: var(--foreground-color);
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   margin: 2rem;
 }
 
@@ -42,7 +42,7 @@ a:active {
   color: var(--active-color);
 }
 
-a[href='#'] {
+a[href="#"] {
   @apply pointer-events-none cursor-not-allowed opacity-40;
 }
 
@@ -50,4 +50,20 @@ a[href='#'] {
 .hide-header-anchor a {
   display: none;
   visibility: hidden;
+}
+
+#logo {
+  margin: min(15%, 15rem) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo .fill {
+  fill: var(--foreground-color);
+}
+
+#logo .stroke {
+  stroke: var(--foreground-color);
 }

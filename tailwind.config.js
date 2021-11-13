@@ -1,18 +1,18 @@
-const plugin = require('tailwindcss/plugin');
+const plugin = require("tailwindcss/plugin");
 
 const variableFontWeightPlugin = plugin(({ addUtilities }) => {
   const fontWeights = [
-    '.font-thin',
-    '.font-light',
-    '.font-extralight',
-    '.font-normal',
-    '.font-medium',
-    '.font-semibold',
-    '.font-bold',
-    '.font-extrabold',
-    '.font-black',
+    ".font-thin",
+    ".font-light",
+    ".font-extralight",
+    ".font-normal",
+    ".font-medium",
+    ".font-semibold",
+    ".font-bold",
+    ".font-extrabold",
+    ".font-black",
   ].reduce((acc, className, i) => {
-    acc[className] = { 'font-variation-settings': `'wght' ${(i + 1) * 100}` };
+    acc[className] = { "font-variation-settings": `'wght' ${(i + 1) * 100}` };
     return acc;
   }, {});
 
@@ -20,7 +20,8 @@ const variableFontWeightPlugin = plugin(({ addUtilities }) => {
 });
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./.vitepress/theme/**/*.vue', './**/*.md'],
-  plugins: [variableFontWeightPlugin, require('@tailwindcss/typography')],
+  mode: "jit",
+  purge: ["./.vitepress/theme/**/*.vue", "./**/*.md"],
+  plugins: [variableFontWeightPlugin, require("@tailwindcss/typography")],
+  darkMode: "media",
 };

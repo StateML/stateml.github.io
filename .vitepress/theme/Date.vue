@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue';
+import { computed } from "vue";
 
 const props = defineProps({
   createdDate: { type: Object, required: true },
@@ -21,10 +21,10 @@ const isUpdated = computed(
 );
 
 function formatUpdatedDate() {
-  return new Date(props.updatedDate).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
+  return new Date(props.updatedDate).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
   });
 }
 
@@ -39,7 +39,7 @@ function getDateTime(time) {
       flex flex-wrap
       column-gap-3
       text-sm
-      leading-6
+      leading-10
       font-medium
       text-gray-500
       whitespace-nowrap
@@ -48,14 +48,18 @@ function getDateTime(time) {
     <div class="flex">
       <dt class="sr-only">Created</dt>
       <dd>
-        <time :datetime="getDateTime(props.createdDate.time)">{{ props.createdDate.string }}</time>
+        <time :datetime="getDateTime(props.createdDate.time)">{{
+          props.createdDate.string
+        }}</time>
       </dd>
     </div>
     <div v-if="isUpdated" class="flex">
       (
       <dt>updated&nbsp;</dt>
       <dd>
-        <time :datetime="getDateTime(props.updatedDate)">{{ formatUpdatedDate() }}</time>
+        <time :datetime="getDateTime(props.updatedDate)">{{
+          formatUpdatedDate()
+        }}</time>
       </dd>
       )
     </div>
