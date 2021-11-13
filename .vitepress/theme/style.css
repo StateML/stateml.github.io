@@ -51,19 +51,3 @@ a[href="#"] {
   display: none;
   visibility: hidden;
 }
-
-#logo {
-  margin: min(15%, 15rem) 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#logo .fill {
-  fill: var(--foreground-color);
-}
-
-#logo .stroke {
-  stroke: var(--foreground-color);
-}
