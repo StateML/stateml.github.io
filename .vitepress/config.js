@@ -1,49 +1,49 @@
-require('./genMetadata').watchPosts();
+require("./genMetadata").watchPosts();
 
 /**
  * @type {import('vitepress').UserConfig}
  */
 module.exports = {
-  title: 'StateML',
-  description: 'A language for authoring state machines.',
+  title: "StateML",
+  description: "A language for authoring state machines.",
   head: [
     [
-      'link',
+      "link",
       {
-        rel: 'icon',
-        type: 'image/svg+xml',
-        href: '/favicon.svg',
+        rel: "icon",
+        type: "image/svg+xml",
+        href: "/favicon.svg",
       },
     ],
     [
-      'link',
+      "link",
       {
-        rel: 'icon',
-        type: 'image/png',
-        href: '/favicon.png',
+        rel: "icon",
+        type: "image/png",
+        href: "/favicon.png",
       },
     ],
     [
-      'link',
+      "link",
       {
-        rel: 'preload',
-        as: 'font',
-        href: '/fira-code-variable.ttf',
-        crossorigin: 'anonymous',
+        rel: "preload",
+        as: "font",
+        href: "/fira-code-variable.ttf",
+        crossorigin: "anonymous",
       },
     ],
     [
-      'meta',
+      "meta",
       {
-        name: 'keywords',
+        name: "keywords",
         content:
-          'SML, StateML, State Machine Language, state machines, finite state machines, FSM, statecharts',
+          "SML, StateML, State Machine Language, state machines, finite state machines, FSM, statecharts",
       },
     ],
   ],
   markdown: {
     config(md) {
-      md.use(require('markdown-it-attrs'));
+      md.use(require("markdown-it-attrs"));
     },
   },
 };
