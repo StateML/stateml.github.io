@@ -5,9 +5,9 @@ author: 'Chris Shank'
 twitter: '@chrisshank23'
 ---
 
-<!-- partially scaped -->
+<!-- this draft is abandoned, it needs a smaller scope.  -->
 
-Hi! 👋🏼 Welcome to "The Initial State" blog! As we build out StateML we think that it's important to spend time writing and documenting our explorations, design decisions, and musings about the language and tooling we are building out for state machines and statecharts. There is so much to discuss, and we can't wait to share sharing more!
+Hi! 👋🏼 Welcome to "The Initial State" digital garden! As we build out StateML we think that it's important to spend time writing and documenting our explorations, design decisions, and musings about the language and tooling we are building out for state machines and statecharts. There is so much to discuss, and we can't wait to share sharing more!
 
 ---
 

@@ -49,7 +49,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1]);
           <a :href="nextPost.href">{{ nextPost.title }}</a>
         </div>
       </div>
-      <a class="p-2" href="/blog">← Back to the blog</a>
+      <a class="p-2" href="/garden">← Back to the garden</a>
     </footer>
   </article>
 </template>
