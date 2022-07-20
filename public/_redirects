@@ -1,1 +1,1 @@
-/spec/\* https://stateml-specification.netlify.app/:splat 200
+/spec/* https://stateml-specification.netlify.app/:splat 200
