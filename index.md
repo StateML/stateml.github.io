@@ -34,7 +34,7 @@ title: A language for authoring state machines.
   </svg>
 </h1>
 
-## A language for authoring state machines.
+## A language for modeling event-driven behavior.
 
 Enabling the next-generation of state machine and statechart tooling, visualizers, and
 interpreters. StateML schematics can be compiled to a growing number of formats,
