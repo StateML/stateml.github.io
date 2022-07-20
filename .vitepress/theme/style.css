@@ -46,6 +46,10 @@ a[href='#'] {
   @apply pointer-events-none cursor-not-allowed opacity-40;
 }
 
+img {
+  @apply rounded-md shadow-lg max-w-lg mx-auto;
+}
+
 /* Remove the anchor link that Vitepress adds */
 .hide-header-anchor a {
   display: none;

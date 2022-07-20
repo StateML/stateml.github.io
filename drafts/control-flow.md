@@ -1,5 +1,5 @@
 ---
-title: 'The pace layers of a language'
+title: 'Statecharts as control flow'
 date: '2022-01-03'
 author: 'Chris Shank'
 twitter: 'chrisshank23'

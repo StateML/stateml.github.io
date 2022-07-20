@@ -1,5 +1,5 @@
 ---
-title: 'The pace layers of a language'
+title: 'Intention revealing names'
 date: '2022-01-03'
 author: 'Chris Shank'
 twitter: 'chrisshank23'
