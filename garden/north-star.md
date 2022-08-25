@@ -1,6 +1,6 @@
 ---
 title: 'Our north stars for the StateML language'
-date: '2022-08-06'
+date: '2022-08-25'
 author: 'John Yanarella'
 twitter: 'johnyanarella'
 tags: ['WIP']
