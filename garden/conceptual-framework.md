@@ -1,10 +1,11 @@
 ---
-title: 'Our north stars for the StateML language'
+title: 'Building a concepetual framework around the design of StateML'
 date: '2022-08-25'
 author: 'John Yanarella'
 twitter: 'johnyanarella'
 tags: ['WIP']
 --- 
+*This essay lays out a first attempt to lay out the concpetual framework used to design the StateML langauge. Expect this document to be updated as we learn how to better artiuclate this framework.*
 
 A declarative language is at its best when it exhibits the principle of least power. It should be easy to generate from imperative languages. And the model it defines should be easy to interrogate and consume from imperative languages.
 
