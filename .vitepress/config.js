@@ -1,9 +1,7 @@
-require('./genMetadata').watchPosts();
+import { defineConfig } from 'vitepress';
+import markdownItAttrs from 'markdown-it-attrs';
 
-/**
- * @type {import('vitepress').UserConfig}
- */
-module.exports = {
+export default defineConfig({
   title: 'StateML',
   description: 'A language for authoring state machines.',
   head: [
@@ -43,7 +41,7 @@ module.exports = {
   ],
   markdown: {
     config(md) {
-      md.use(require('markdown-it-attrs'));
+      md.use(markdownItAttrs);
     },
   },
-};
+});

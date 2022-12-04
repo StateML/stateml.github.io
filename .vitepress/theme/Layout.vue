@@ -33,7 +33,7 @@
         <a href="#">Learn</a>
         <a href="#">Playground</a>
         <a href="#">Spec</a>
-        <a href="/garden" :class="isGarden ? 'font-bold' : ''">Digital Garden</a>
+        <a href="/essays" :class="isEssays ? 'font-bold' : ''">Essays</a>
         <a href="https://github.com/StateML">Github</a>
         <a href="https://twitter.com/stateml_org">Twitter</a>
       </div>
@@ -57,6 +57,6 @@ import Post from './Post.vue';
 
 const route = useRoute();
 const isIndex = computed(() => route.path === '/index.html' || route.path === '/');
-const isPost = computed(() => route.path.includes('/garden/'));
-const isGarden = computed(() => route.path.includes('garden'));
+const isPost = computed(() => route.path.includes('/essays/'));
+const isEssays = computed(() => route.path.includes('essays'));
 </script>

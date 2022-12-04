@@ -2,8 +2,7 @@
 import Date from './Date.vue';
 import { computed } from 'vue';
 import { useRoute } from 'vitepress';
-import posts from '../metadata.json';
-
+import { posts } from './posts';
 const route = useRoute();
 function findCurrentIndex() {
   return posts.findIndex((p) => p.href === route.path);
@@ -49,7 +48,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1]);
           <a :href="nextPost.href">{{ nextPost.title }}</a>
         </div>
       </div>
-      <a class="p-2" href="/garden">← Back to the garden</a>
+      <a class="p-2" href="/essays">← Back to the essays</a>
     </footer>
   </article>
 </template>

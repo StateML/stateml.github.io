@@ -1,6 +1,6 @@
 <script setup>
 import Date from './Date.vue';
-import posts from '../metadata.json';
+import { posts } from './posts';
 </script>
 
 <template>
@@ -8,15 +8,7 @@ import posts from '../metadata.json';
     <div class="divide-y divide-gray-200">
       <div class="pt-6 pb-8 space-y-2 md:space-y-5">
         <h1
-          class="
-            text-3xl
-            leading-9
-            font-extrabold
-            text-gray-900
-            tracking-tight
-            sm:text-4xl sm:leading-10
-            md:text-6xl md:leading-14
-          "
+          class="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
         >
           {{ $frontmatter.title }}
         </h1>
@@ -24,7 +16,7 @@ import posts from '../metadata.json';
       </div>
     </div>
     <ul class="divide-y divide-gray-200">
-      <li class="py-12" v-for="{ title, href, date, tags, excerpt } of posts">
+      <li class="py-12" v-for="{ title, href, date, tags } of posts">
         <article class="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
           <Date :created-date="date" />
           <div class="space-y-3 xl:col-span-3">
