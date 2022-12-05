@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress';
-import markdownItAttrs from 'markdown-it-attrs';
 
 export default defineConfig({
   title: 'StateML',
@@ -39,9 +38,4 @@ export default defineConfig({
       },
     ],
   ],
-  markdown: {
-    config(md) {
-      md.use(markdownItAttrs);
-    },
-  },
 });
