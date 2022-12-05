@@ -55,3 +55,16 @@ img {
   display: none;
   visibility: hidden;
 }
+
+button.copy {
+  display: none;
+}
+
+span.lang {
+  position: absolute;
+  right: 0.5em;
+  font-size: 0.75em;
+  color: #999;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+}
