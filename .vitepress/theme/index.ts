@@ -7,7 +7,5 @@ import './style.css';
 export default {
   Layout,
   NotFound,
-  enhanceApp({ app, router, siteData }) {
-    // ...
-  },
+  // enhanceApp({ app, router, siteData }) {},
 } satisfies Theme;

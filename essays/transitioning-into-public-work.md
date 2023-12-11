@@ -1,11 +1,11 @@
 ---
-title: 'Transitioning the project out of stealth mode'
-date: '2023-01-23'
+title: 'An update at the end of 2023.'
+date: '2023-12-15'
 author: 'Chris Shank'
 twitter: 'chrisshank23'
 ---
 
-Hey there! It has been a while since we have really shared any updates on the progress of StateML, besides small teasers here and there. Furthermore, I'm not sure we have been entirely clear on goals, vision, and scope of the language. I hope to shine a little light on both of these!
+Hey there! It's been a while since we have shared any updates on the progress of StateML, besides a few teasers here and there. Furthermore, I'm not sure we have been entirely explicit on our goals, vision, and scope of the language. I hope to shine a little light on both of these in this post!
 
 - private, slow moving research
 - goals of language

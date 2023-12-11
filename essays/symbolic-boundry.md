@@ -1,6 +1,6 @@
 ---
 title: 'The symbolic boundary of statecharts; hidden between the visual formalism and executable schematic'
-date: '2021-10-21'
+date: '2021-11-21'
 author: 'Chris Shank'
 twitter: '@chrisshank23'
 tags:

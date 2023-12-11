@@ -17,9 +17,15 @@ devDependencies:
   tailwindcss:
     specifier: ^3.3.6
     version: 3.3.6
+  vite:
+    specifier: ^5.0.0
+    version: 5.0.7
   vitepress:
     specifier: 1.0.0-rc.31
     version: 1.0.0-rc.31(@algolia/client-search@4.20.0)(postcss@8.4.32)(search-insights@2.13.0)
+  vue:
+    specifier: ^3.0.0
+    version: 3.3.11
 
 packages:
 
