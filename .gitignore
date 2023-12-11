@@ -1,4 +1,6 @@
 node_modules
 .DS_Store
 .vitepress/metadata.json
+.vitepress/dist
+.vitepress/cache
 dist
