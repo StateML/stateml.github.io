@@ -4,6 +4,7 @@ title: A language for authoring state machines.
 
 <section class="flex flex-col justify-center items-center" style="margin: min(20%, 10rem) 0;">
 
+<!-- Wrapping this div around the svg is necessary for some reason... -->
 <div>
   <svg
     viewBox="0 0 304 100"
