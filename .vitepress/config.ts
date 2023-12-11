@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress';
 
+// https://vitepress.dev/reference/site-config
 export default defineConfig({
+  mpa: true,
   title: 'StateML',
   description: 'A language for authoring state machines.',
   head: [

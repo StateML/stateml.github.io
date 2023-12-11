@@ -1,4 +1,7 @@
-const plugin = require('tailwindcss/plugin');
+import tailwind from 'tailwindcss';
+import tailwindTypography from '@tailwindcss/typography';
+
+import plugin from 'tailwindcss/plugin.js';
 
 const variableFontWeightPlugin = plugin(({ addUtilities }) => {
   const fontWeights = [
@@ -19,8 +22,11 @@ const variableFontWeightPlugin = plugin(({ addUtilities }) => {
   addUtilities(fontWeights);
 });
 
-module.exports = {
-  mode: 'jit',
-  purge: ['./.vitepress/theme/**/*.vue', './**/*.md'],
-  plugins: [variableFontWeightPlugin, require('@tailwindcss/typography')],
+export default {
+  plugins: [
+    tailwind({
+      content: ['./.vitepress/theme/**/*.vue', './**/*.md'],
+      plugins: [tailwindTypography, variableFontWeightPlugin],
+    }),
+  ],
 };
